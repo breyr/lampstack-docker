@@ -20,12 +20,8 @@ These instructions will get you a copy of the project up and running on your loc
     - `MYSQL_USER`
     - `MYSQL_PASSWORD`
     - `MYSQL_ALLOW_EMPTY_PASSWORD=1`
-4. Open the `src/includes/connect.php` file and replace `<database service name>`, `<user>`, `<password>`, and `<database>` with your own data. The connection should look something like this:
-   
-    ```php
-    $conn = new mysqli("db", "your_user", "your_password", "your_database");
-    ```
-5. Run the following command `docker-compose up` in the root directory of the project to start the services.
+    - Optional: `DB_SERVICE` (default is `db`)
+4. Run the following command `docker-compose up` in the root directory of the project to start the services.
 
 ### Other Notes
 
